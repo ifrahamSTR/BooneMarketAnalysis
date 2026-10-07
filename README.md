@@ -6,7 +6,7 @@ Static site (no build step), same template as the Galveston, Bend, Gulf Shores, 
 
 1. `../notebooks/market_common.py` holds the market specifics:
    - workbook `../Boone - NC - Banner Elk, NC Greater Area.xlsx` (snapshot 2026-09-28) → `Cleaned_Data`, kept to entire homes via `Base_Table.roomType` (228 of 228), with the listing description merged in from `Base_Table`;
-   - 6 Ward-clustered reference areas (Blowing Rock, Between Boone & Blowing Rock, West Boone & Hwy 105, North & East Boone, Foscoe & Shulls Mill, Valle Crucis & Vilas), named from centroid thresholds and checked against reverse geocoding and OSM roads;
+   - 6 Ward-clustered reference areas (Blowing Rock, Between Boone & Blowing Rock, Downtown & West Boone, North & East Boone, Foscoe & Shulls Mill, Valle Crucis & Vilas), named from centroid thresholds and checked against reverse geocoding and OSM roads;
    - bedroom buckets Studio-1BR / 2BR / 3BR / 4BR+;
    - distance to town: kilometres to the nearer of downtown Boone (King Street) and Blowing Rock's Main Street, in three bands (under 2.5 km, 2.5–6 km, 6 km+);
    - extra screening flags: Blowing Rock area, an advertised mountain or long-range view (from the title and description), and elevation of 3,800 ft or more (USGS EPQS, cached in `elevation_usgs.json`).
